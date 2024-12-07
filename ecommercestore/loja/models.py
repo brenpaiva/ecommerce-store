@@ -23,12 +23,15 @@ class Tipo(models.Model):
         return str(self.nome)
 
 class Produto(models.Model):
-    imagem = models.CharField(max_length=400, null=True, blank=True)
+    imagem = models.ImageField(null=True, blank=True)
     nome = models.CharField(max_length=200, null=True, blank=True)
     preco = models.DecimalField(max_digits=10, decimal_places=2)
     ativo = models.BooleanField(default=True)
     categoria = models.ForeignKey(Categoria, null=True, blank=True, on_delete=models.SET_NULL)
     tipo = models.ForeignKey(Tipo, null=True, blank=True, on_delete=models.SET_NULL)
+
+    def __str__(self):
+        return f"Nome: {self.nome}, Categoria: {self.categoria}, Tipo: {self.tipo}, Preço: {self.preco}"
 
 class ItemEstoque(models.Model):
     produto = models.ForeignKey(Produto, null=True, blank=True, on_delete=models.SET_NULL)
@@ -38,7 +41,7 @@ class ItemEstoque(models.Model):
 
 class Endereco(models.Model):
     rua = models.CharField(max_length=400, null=True,blank=True)
-    numero = models.IntegerField(max_length=200, null=True,blank=True)
+    numero = models.IntegerField(null=True,blank=True)
     complemento = models.CharField(max_length=200, null=True,blank=True)
     cep = models.CharField(max_length=200, null=True,blank=True)
     cidade = models.CharField(max_length=200, null=True,blank=True)
@@ -57,3 +60,10 @@ class ItensPedido(models.Model):
     quantidade = models.IntegerField(default=0)
     pedido = models.ForeignKey(Pedido, null=True, blank=True, on_delete=models.SET_NULL)
 
+class Banner(models.Model):
+    imagem = models.ImageField(null=True, blank=True)
+    link_destino = models.CharField(max_length=400, null=True, blank=True)
+    ativo = models.BooleanField(default=False)
+    
+    def __str__(self):
+        return f"{self.link_destino} - Ativo: {self.ativo}"

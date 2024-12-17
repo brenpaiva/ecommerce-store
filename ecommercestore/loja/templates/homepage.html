@@ -8,7 +8,9 @@
 
 {% for banner in banners %}
 
-{{ banner }}
+<a href="{% url 'loja' %}{{ banner.link_destino }}">
+<img src="{{ banner.imagem.url }}">
+</a>
 
 {% endfor %}
 {% endblock %}

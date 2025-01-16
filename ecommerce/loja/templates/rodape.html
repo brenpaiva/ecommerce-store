@@ -1,0 +1,409 @@
+<footer class="rodape">
+    <section class="rodape__secao-formulario">
+      <div class="rodape__app-newsletter">
+        <div class="rodape__container-newsletter">
+          <div class="rodape__newsletter">
+            <svg
+              class="rodape__logo"
+              viewBox="0 0 18 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+            
+            </svg>
+            <p class="rodape__texto-newsletter">Assine nossa newsletter</p>
+            <p class="rodape__texto">
+              Cadastre-se e receba promoções exclusivas e saiba tudo antes de
+              todo mundo!
+            </p>
+          </div>
+
+          <form class="formulario" action="">
+            <input
+              class="formulario__input"
+              type="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+            />
+            <input
+              class="formulario__input"
+              type="text"
+              name="name"
+              placeholder="Digite seu nome"
+            />
+            <button class="formulario__botao" type="submit">Cadastrar</button>
+          </form>
+        </div>
+
+        <div class="rodape__container-app">
+          <div class="rodape__app">
+            <p class="rodape__texto-newsletter">Baixe o app</p>
+            <p class="rodape__texto">
+              Nossa loja todinha na palma da sua mão, baixe agora mesmo na loja
+              do seu smartphone.
+            </p>
+          </div>
+
+          <div class="rodape__app">
+            <a
+              href="{% url 'homepage' %}"
+              ><img
+                class="rodape__imagens-loja"
+                src="https://lojausereserva.vtexassets.com/arquivos/playstorex2.png"
+                alt="Imagem Play Store"
+            /></a>
+            <a href="{% url 'homepage' %}"
+              ><img
+                class="rodape__imagens-loja"
+                src="https://lojausereserva.vtexassets.com/arquivos/appstorex2.png"
+                alt="Imagem App Store"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rodape__secao-informacoes">
+      <div class="rodape__container">
+        <div class="rodape__informacoes">
+          <div class="rodape__informacao">
+            <p class="rodape__titulo">Sobre a Loja</p>
+
+            <ul class="rodape__links">
+              <li><a href="https://www.usereserva.com/1p5p">1P=5P</a></li>
+              <li>
+                <a href="https://www.usereserva.com/cultura">Cultora</a>
+              </li>
+              <li>
+                <a href="{% url 'homepage' %}"
+                  >Sustentabilidade</a
+                >
+              </li>
+              <li>
+                <a href="{% url 'homepage' %}">Quem faz</a>
+              </li>
+              <li>
+                <a href="{% url 'homepage' %}"
+                  >Mapa de Categorias</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="rodape__informacao">
+            <p class="rodape__titulo">Vem E-Commerce Store</p>
+
+            <ul class="rodape__links">
+              <li>
+                <a href="https://www.usereserva.com/sejafranquead"
+                  >Seja um Franqueado</a
+                >
+              </li>
+              <li>
+                <a href="https://www.usereserva.com/lojas">Nossas Lojas</a>
+              </li>
+              <li>
+                <a href="{% url 'homepage' %}"
+                  >Trabalhe Conosco</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="rodape__informacao">
+            <p class="rodape__titulo">Minha Conta</p>
+
+            <ul class="rodape__links">
+              <li>
+                <a href="{% url 'homepage' %}"
+                  >Favoritos</a
+                >
+              </li>
+              <li>
+                <a href="{% url 'homepage' %}"
+                  >Meus Pedidos</a
+                >
+              </li>
+              <li>
+                <a href="{% url 'homepage' %}"
+                  >Minha Carteira</a
+                >
+              </li>o
+              <li>
+                <a href="{% url 'homepage' %}"
+                  >Meu Cartão Presente</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="rodape__informacao">
+            <p class="rodape__titulo">Suporte</p>
+
+            <ul class="rodape__links">
+              <li>
+                <a href="{% url 'homepage' %}"
+                  >Política de Privacidade</a
+                >
+              </li>
+              <li>
+                <a href="https://www.usereserva.com/termos-de-uso"
+                  >Termos de Uso</a
+                >
+              </li>
+              <li>
+                <a href="https://usereserva.zendesk.com/hc/pt-br"
+                  >Dúvidas Frequentes</a
+                >
+              </li>
+              <li>
+                <a href="https://www.usereserva.com/"
+                  >Compromisso Best Friday</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://usereserva.s3.sa-east-1.amazonaws.com/PDFs-Institucionais/Reserva+-+1+Ano+em+Compras+-+Regulamento+autorizado+(1).pdf"
+                  >Regulamento ação 1 ano de Reserva</a
+                >
+              </li>
+              <li>
+                <a href="https://www.usereserva.com/troca-e-devolucao"
+                  >Troca e Devolução</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rodape__atendimento">
+          <p class="rodape__titulo">Atendimento</p>
+
+          <div class="rodape__ancoras">
+            <a class="rodape__ancora-icone" href="https://pslz.in/reserva"
+              ><img
+                loading="lazy"
+                crossorigin="anonymous"
+                class="rodape__icone"
+                data-src="https://lojausereserva.vtexassets.com/assets/vtex.file-manager-graphql/images/9c4ad5b9-1b4d-4f4d-afce-fc05e3ee3b36___aac616c1eff051d87cbbe7d7ea6090db.svg"
+                src="https://lojausereserva.vtexassets.com/assets/vtex.file-manager-graphql/images/9c4ad5b9-1b4d-4f4d-afce-fc05e3ee3b36___aac616c1eff051d87cbbe7d7ea6090db.svg"
+              />
+              Atendimento em libras
+            </a>
+
+            <div class="rodape__whatsapp">
+              <a class="rodape__ancora-icone" href="http://bit.ly/42nkvKc">
+                <img
+                  loading="lazy"
+                  crossorigin="anonymous"
+                  class="rodape__icone"
+                  data-src="https://lojausereserva.vtexassets.com/assets/vtex.file-manager-graphql/images/d20346db-d162-4873-8518-b8548620acf6___07a0cb802e61ce015e6477828969ca35.svg"
+                  src="https://lojausereserva.vtexassets.com/assets/vtex.file-manager-graphql/images/d20346db-d162-4873-8518-b8548620acf6___07a0cb802e61ce015e6477828969ca35.svg"
+                />
+                WhatsApp
+              </a>
+
+              <p class="rodape__horarios">
+                Segunda a Sexta: 08h às 20h<br />Sábados: 08h às 18h
+              </p>
+            </div>
+
+            <a
+              class="rodape__ancora-icone"
+              href="https://lojausereserva.troquefacil.com.br/order"
+            >
+              <img
+                loading="lazy"
+                crossorigin="anonymous"
+                class="rodape__icone"
+                data-src="https://lojausereserva.vtexassets.com/assets/vtex.file-manager-graphql/images/c9f66e16-18fc-47e7-80d2-8285e4945aab___02415dfe7c43260a39980d26a4a3f438.svg"
+                src="https://lojausereserva.vtexassets.com/assets/vtex.file-manager-graphql/images/c9f66e16-18fc-47e7-80d2-8285e4945aab___02415dfe7c43260a39980d26a4a3f438.svg"
+              />
+              Solicite sua troca
+            </a>
+          </div>
+
+          <div class="rodape__redes">
+            <a href="https://facebook.com/" class="rodape__rede">
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/fbx1.png"
+                alt="Logo Facebook"
+              />
+            </a>
+            <a href="https://instagram.com" class="rodape__rede">
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/insx1.png"
+                alt="Logo Instagram"
+              />
+            </a>
+            <a
+              href="https://youtube.com/"
+              class="rodape__rede"
+            >
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/ytx1.png"
+                alt="Logo YouTube"
+              />
+            </a>
+            <a href="https://twitter.com" class="rodape__rede">
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/twx1.png"
+                alt="Logo Twitter"
+              />
+            </a>
+            <a
+              href="https://linkedin.com"
+              class="rodape__rede"
+            >
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/linx1.png"
+                alt="Logo LinkedIn"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rodape__container">
+        <div class="rodape__diferenciais">
+          <div class="rodape__diferencial">
+            <img
+              src="https://lojausereserva.vtexassets.com/arquivos/entr3x.png"
+              alt="Imagem Diferencial"
+              class="rodape__diferencial-imagem"
+            />
+            <p class="rodape__diferencial-titulo">Entrega Internacional</p>
+            <p>Entrega para mais de 40 países de forma rápida e segura.</p>
+          </div>
+
+          <div class="rodape__diferencial">
+            <img
+              src="https://lojausereserva.vtexassets.com/arquivos/1p5px2.png"
+              alt="Imagem Diferencial"
+              class="rodape__diferencial-imagem"
+            />
+            <p class="rodape__diferencial-titulo">1P=5P</p>
+            <p>
+              A cada peça vendida, 5 pratos de comida são viabilizados para
+              quem tem fome.
+            </p>
+          </div>
+
+          <div class="rodape__diferencial">
+            <img
+              src="https://lojausereserva.vtexassets.com/arquivos/trocax2.png"
+              alt="Imagem Diferencial"
+              class="rodape__diferencial-imagem"
+            />
+            <p class="rodape__diferencial-titulo">Troca Facilitada</p>
+            <p>
+              Compre no site ou app e troque em uma das lojas em até 7 dias.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rodape__container">
+        <div class="rodape__certificacoes">
+          <div class="rodape__certificacao">
+            <p class="rodape__certificacao-titulo">Somos com Orgulho</p>
+
+            <div class="rodape__certificados">
+              <div class="rodape__certificado">
+                <img
+                  src="https://lojausereserva.vtexassets.com/arquivos/empb2x.png"
+                  alt="Imagem Certificado"
+                />
+              </div>
+              <div class="rodape__certificado">
+                <img
+                  src="https://lojausereserva.vtexassets.com/arquivos/capit2x.png"
+                  alt="Imagem Certificado"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="rodape__certificacao">
+            <p
+              class="rodape__certificacao-titulo rodape__certificacao-titulo--centralizado"
+            >
+              Navegue por Marcas Parceiras
+            </p>
+
+            <div class="rodape__certificados">
+              <a
+                href="https://usereserva.com/"
+                class="rodape__certificado rodape__certificado--opacidade"
+              >
+                <img
+                  src="https://lojausereserva.vtexassets.com/arquivos/rsvx1.png"
+                  alt="Imagem Certificado"
+                />
+              </a>
+              <a
+                href="https://usereserva.com/mini"
+                class="rodape__certificado rodape__certificado--opacidade"
+              >
+                <img
+                  src="https://lojausereserva.vtexassets.com/arquivos/rsvminix1.png"
+                  alt="Imagem Certificado"
+                />
+              </a>
+              <a
+                href="https://usereserva.com/calcados"
+                class="rodape__certificado rodape__certificado--opacidade"
+              >
+                <img
+                  src="https://lojausereserva.vtexassets.com/arquivos/rsvgox1.png"
+                  alt="Imagem Certificado "
+                />
+              </a>
+              <a
+                href="https://usereserva.com/reversa"
+                class="rodape__certificado rodape__certificado--opacidade"
+              >
+                <img
+                  src="https://lojausereserva.vtexassets.com/arquivos/rvsx1.png"
+                  alt="Imagem Certificado"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="rodape__certificacao">
+            <p class="rodape__certificacao-titulo">Certificações</p>
+
+            <div class="rodape__certificados">
+              <div class="rodape__certificado">
+                <img
+                  src="https://lojausereserva.vtexassets.com/arquivos/letse2x.png"
+                  alt="Imagem Certificado"
+                />
+              </div>
+              <div class="rodape__certificado">
+                <img
+                  src="https://lojausereserva.vtexassets.com/arquivos/ebit2x.png"
+                  alt="Imagem Certificado"
+                />
+              </div>
+              <div class="rodape__certificado">
+                <img
+                  src="https://lojausereserva.vtexassets.com/arquivos/recla2x.png"
+                  alt="Imagem Certificado"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rodape__secao-empresa">
+      <p>
+        E-Commerce Store S.A | CNPJ: 12.345.678/9101-12 | Inscrição
+        Estadual: 987654321 | AV FICTÍCIA, 321 - GALPÃO 400 - BAIRRO IMAGINÁRIO -
+        SÃO JOÃO DE FANTASIA | CEP: 12345-678 
+      </p>
+    </section>
+  </footer>
